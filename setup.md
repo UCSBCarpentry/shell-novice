@@ -13,8 +13,85 @@ You need to download some files to follow this lesson.
 
 ## Install software
 
-If you do not already have the shell software installed, you will need to
-[download and install][install_shell] it.
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Installation instructions {#instructions}
+
+Follow these install instructions according to your Operating System (OS).
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::: solution
+
+### Windows {#windows1}
+
+Please install **Git for Windows** using the instructions below.
+
+- Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>
+installed.
+- Run the installer and follow the steps below:
+  - Click on "Next" four times (two times if you've previously installed Git).  You don't need to change anything in the Information, location, components, and start menu screens.
+  - From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".
+  - On the page that says "Adjusting the name of the initial branch in new repositories", ensure that "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+  - Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)
+  - Select "Use bundled OpenSSH".
+  - Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+  - Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+  - Ensure that "Use Windows' default console window" is selected and click on "Next".
+  - Ensure that "Default (fast-forward or merge) is selected and click "Next"
+  - Ensure that "Git Credential Manager" is selected and click on "Next".
+  - Ensure that "Enable file system caching" is selected and click on "Next".
+  - Click on "Install".
+  - Click on "Finish" or "Next".
+-  If your "HOME" environment variable is not set (or you don't know what this is):
+  - Open command prompt (Open Start Menu then type <code>cmd</code> and press <kbd>Enter</kbd>)
+  - Type the following line into the command prompt window exactly as shown: <p><code>setx HOME "%USERPROFILE%"</code></p>
+  - Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code>
+  - Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd>
+
+If you prefer, here is a video tutorial with the instructions: <a href="https://www.youtube.com/watch?v=339AEqk9c-8" target="_blank">https://www.youtube.com/watch?v=339AEqk9c-8</a>
+
+::::::::::::
+
+:::::::::::: solution
+
+### MacOS {#macos1}
+
+For a Mac computer running macOS Mojave or earlier releases, the default Unix Shell is Bash.
+For a Mac computer running macOS Catalina or later releases, the default Unix Shell is Zsh.
+Your default shell is available via the Terminal program within your Utilities folder.
+
+To open Terminal, try one or both of the following:
+
+- In Finder, select the Go menu, then select Utilities.
+  Locate Terminal in the Utilities folder and open it.
+- Use the Mac 'Spotlight' computer search function.
+  Search for: `Terminal` and press <kbd>Return</kbd>.
+
+To check if your machine is set up to use something other than Bash,
+type `echo $SHELL` in your terminal window.
+
+If your machine is set up to use something other than Bash,
+you can run it by opening a terminal and typing `bash`.
+
+[How to Use Terminal on a Mac][mac-terminal]
+
+::::::::::::
+
+:::::::::::: solution
+
+### Linux {#linux1}
+
+The default Unix Shell for Linux operating systems is usually Bash.
+On most versions of Linux, it is accessible by running the
+[Gnome Terminal][gnome-terminal] or [KDE Konsole][kde-konsole] or [xterm],
+which can be found via the applications menu or the search bar.
+If your machine is set up to use something other than Bash,
+you can run it by opening a terminal and typing `bash`.
+
+::::::::::::
 
 ## Open a new shell
 
@@ -48,11 +125,11 @@ try an online search for: Unix shell [your computer model] [your operating syste
 
 :::::::::::: solution
 
-### Windows {#windows}
+### Windows {#windows2}
 
 Computers with Windows operating systems do not automatically have a Unix Shell program
 installed.
-In this lesson, we encourage you to use an emulator included in [Git for Windows][install_shell],
+In this lesson, we encourage you to use an emulator included in [Git for Windows](#instructions),
 which gives you access to both Bash shell commands and Git.
 
 Once installed, you can open a terminal by running the program Git Bash from the Windows start
@@ -70,7 +147,7 @@ from those shown in the lesson or presented in the workshop.
 
 :::::::::::: solution
 
-### MacOS {#macos}
+### MacOS {#macos2}
 
 For a Mac computer running macOS Mojave or earlier releases, the default Unix Shell is Bash.
 For a Mac computer running macOS Catalina or later releases, the default Unix Shell is Zsh.
@@ -95,7 +172,7 @@ you can run it by opening a terminal and typing `bash`.
 
 :::::::::::: solution
 
-### Linux {#linux}
+### Linux {#linux2}
 
 The default Unix Shell for Linux operating systems is usually Bash.
 On most versions of Linux, it is accessible by running the
